@@ -1,0 +1,87 @@
+/*
+COMP 1054 Assignment #2
+Developers: John Gu(200327450) & Emily Rose(200553504)
+Website design recreation: https://getbootstrap.com/docs/4.0/examples/product/
+*/
+
+/* Global settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display:grid;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+/* General settings */
+header {
+    display: flex;
+    background-color: #212529;
+    color: #999999;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    margin: 0;
+    padding: 0;
+}
+
+header ul {
+    align-items: center;
+}
+
+header ul a {
+    list-style: none;
+    text-decoration: none;
+    color: #999999;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.masthead {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.masthead h1,
+.masthead p,
+.masthead button {
+    width: 50vw;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    margin:0;
+}
+
+.masthead button {
+    width: 8vw;
+    height: 5vh;
+    padding: 0;
+    color: #6c757d;
+    background-color: #fefefe;
+    border: 1px solid #6c757d;
+    border-radius: 0.25rem;
+}
