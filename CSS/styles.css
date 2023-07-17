@@ -51,7 +51,6 @@ a:hover {
 /* General settings */
 header {
     display: flex;
-    flex-direction: row;
     background-color: #212529;
     color: #999999;
     justify-content: center;
@@ -59,30 +58,18 @@ header {
     top:0;
     margin: 0;
     padding: 0;
-    height: 7vh;
 }
 
 header ul {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 0 4px;
-    margin: 0 auto;
 }
 
-header ul li {
+header ul a {
     list-style: none;
-    display: flex;
-    padding: 0 4px;
-    margin: 0 auto;
-    justify-content: space-between;
-}
-
-header ul li a {
+    text-decoration: none;
     color: #999999;
     margin: 0 auto;
     padding: 0 2rem;
-    text-decoration: none;
 }
 
 .masthead {
@@ -91,23 +78,16 @@ header ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .masthead h1,
 .masthead p,
 .masthead button {
-    width: 40vw;
+    width: 50vw;
     height: 10vh;
     text-align: center;
     align-items: center;
     margin:0;
-}
-
-.masthead p,
-.masthead button {
-    line-height: 1.5;
-    margin-bottom: 1rem;
 }
 
 .masthead button {
@@ -120,10 +100,43 @@ header ul li a {
     border-radius: 0.25rem;
 }
 
-.masthead h1 {
-    font-weight: 400;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    color: #343a40;
+    width: 48%;
+    padding: 5em 5em 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.card h2 {
+    font-size: 3rem;
+    line-height: 1.5em;
+}
+
+.card p {
+    font-size: 2rem;
+    padding-bottom: 1em;
+}
+
+.item {
+    background-color: #ffffff;
+    width: 90%;
+    height: 20em;
+    border-radius: 2em 2em 0 0;
 }
 
 .card:nth-of-type(1) {
